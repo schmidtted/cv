@@ -1,5 +1,6 @@
 html {
 	font-family: "Hind Siliguri", sans-serif;
+	scroll-behavior: smooth;
 }
 
 h1 {
@@ -21,34 +22,35 @@ h3 {
 
 :root {
 	font-size: 14px;
-	margin: 1vw 5vw;
+	margin: 1vw 20vw;
 }
 
 @media (min-width: 400px) and (max-width: 1200px) {
 	:root {
-		font-size: calc(14px + (30 - 14) * ((100vw - 400px) / (1200 - 400)));
+		font-size: calc(14px + (20 - 14) * ((100vw - 400px) / (1200 - 400)));
+		margin: 1vw 5vw;
 	}
 
 	h1 {
-		font-size: calc(30px + (150 - 30) * ((100vw - 400px) / (1200 - 400)));
+		font-size: calc(30px + (90 - 30) * ((100vw - 400px) / (1200 - 400)));
 	}
 }
 
 @media (min-width: 1200px) {
 	:root {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	h1 {
-		font-size: 150px;
+		font-size: 90px;
 	}
 
 	h2 {
-		font-size: 70px;
+		font-size: 50px;
 	}
 
 	h3 {
-		font-size: 50px;
+		font-size: 30px;
 	}
 
 }
