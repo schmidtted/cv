@@ -1,10 +1,23 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "225px";
-}
+// Setup isScrolling variable
+var isScrolling;
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+// Listen for scroll events
+window.addEventListener('scroll', function ( event ) {
+
+	// Clear our timeout throughout the scroll
+	window.clearTimeout( isScrolling );
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.display = "block";
+	// Set a timeout to run after scrolling ends
+	isScrolling = setTimeout(function() {
+
+		// Run the callback
+		document.getElementById("navbar").style.top = "-60px";
+
+	}, 3000);
+
+}, false);
+
+function closeNav(){
+    isScrolling = false;
 }
