@@ -12,7 +12,7 @@ window.addEventListener('scroll', function ( event ) {
 	isScrolling = setTimeout(function() {
 
 		// Run the callback
-		document.getElementById("navbar").style.top = "-60px";
+		document.getElementById("navbar").style.top = "-500px";
 
 	}, 3000);
 
