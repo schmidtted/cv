@@ -36,10 +36,19 @@ h3 {
 		font-size: calc(30px + (90 - 30) * ((100vw - 100px) / (1200 - 100)));
 	}
 
-	h4 {
-		font-size: calc(30px + (40 - 30) * ((100vw - 100px) / (1200 - 100)));
-		margin:0px;
+	h2 {
+		font-size: calc(30px + (50 - 30) * ((100vw - 100px) / (1200 - 100)));
 	}
+
+	h3 {
+		font-size: calc(20px + (30 - 30) * ((100vw - 100px) / (1200 - 100)));
+	}
+
+	h4 {
+		font-size: calc(30px + (25 - 30) * ((100vw - 100px) / (1200 - 100)));
+	}
+
+	
 
 
 }
@@ -57,34 +66,37 @@ h3 {
 		font-size: 50px;
 	}
 
-	h3, h4 {
+	h3 {
 		font-size: 30px;
+		margin:0px;
+	}
+
+	h4 {
+		font-size: 25px;
 		margin:0px;
 	}
 
 
 }
 
-#navbar {
+.modal-content {
 	background-color: #333;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	display: none;
-	transition: top 0.3s;
-	margin-left: -10px;
+	
   }
   
-  #navbar a {
-	float: left;
-	display: block;
+  .modal-content a {
 	color: #f2f2f2;
 	text-align: center;
-	padding: 15px;
 	text-decoration: none;
   }
   
-  #navbar a:hover {
+  .modal-content a:hover, h4:hover {
 	background-color: #ddd;
 	color: black;
+  }
+
+  .sticky {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
   }

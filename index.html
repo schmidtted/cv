@@ -3,26 +3,57 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Ted Schmidt - CV</title>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Belgrano&family=Archivo+Narrow&family=Tinos&family=Hind+Siliguri:wght@300&display=swap"
 		rel="stylesheet">
-	<link href="cv.css" rel="stylesheet">
-	<script src="cv.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="cv.css">
+	<script>
+		$(document).ready(function () {
+			// Close modal on link click
+			$(".menuLink").click(function () {
+				$("#myModal").modal('hide');
+			});
+		});
+	</script>
+
 </head>
 
 <body>
-	
-	<div id="navbar">
-		<h4><a href="#about" onclick="closeNav()">About</a></h4>
-		<h4><a href="#tools" onclick="closeNav()">Tools</a></h4>
-		<h4><a href="#experience" onclick="closeNav()">Experience</a></h4>
-		<h4><a href="#education" onclick="closeNav()">Education</a></h4>
-		<h4><a href="#training" onclick="closeNav()">Training</a></h4>
+	<button type="button" class="btn btn-primary sticky" data-toggle="modal" data-target="#myModal" style="margin:5px;">Menu</button>
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" style="color:white">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<a href="#about" class="menuLink"><h4>About</h4></a>
+					<a href="#tools" class="menuLink"><h4>Tools</h4></a>
+					<a href="#experience" class="menuLink"><h4>Experience</h4></a>
+					<a href="#education" class="menuLink"><h4>Education</h4></a>
+					<a href="#training" class="menuLink"><h4>Training</h4></a>
+				</div>
+
+				
+
+			</div>
+		</div>
 	</div>
 	<div id="main">
-		
-		
+
+
 		<h1 id="about">Ted Schmidt</h1>
 		<h2>Who I am</h2>
 		<p>I was born in the USA but have made New Zealand my home. I am a dual citizen and have lived and worked in New
@@ -45,9 +76,7 @@
 			curious mind and enjoy working on finding solutions to problems with others. Relationships are at the heart
 			of
 			everything I do and the lens through which I view the world.</p>
-		<p>To sum things up I am an eclectic mix of a technologist, leader, business aficionado, and imagined social
-			psychologist.</p>
-		<h2>What I’m good at</h2>
+		<h2>Qualities</h2>
 		<ul>
 			<li>Being curious and asking questions</li>
 			<li>Getting to know people and establishing relationships</li>
@@ -60,15 +89,6 @@
 			<li>Knowing when to ask for help</li>
 			<li>Knowing when to give up on something if the cost is outweighing the benefit</li>
 			<li>Openness, sharing, and being transparent</li>
-		</ul>
-		<h2>What I’m not so good at</h2>
-		<ul>
-			<li>Wasting time doing things in a sub-optimal way</li>
-			<li>Cynicism and office politics</li>
-			<li>Uneducated guesses</li>
-			<li>Achieving the status quo</li>
-			<li>Idly standing by when I see that someone or something could use help</li>
-			<li>Doing stuff for no good reason</li>
 		</ul>
 		<h2 id="tools">Things I have used, been exposed to, or am familiar with</h2>
 		<p>JIRA Software, JIRA Service Management, Confluence, Trello, Slack, GitLab/GitHub, CI/CD, Microsoft Azure
